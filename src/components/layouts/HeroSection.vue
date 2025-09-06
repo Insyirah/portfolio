@@ -2,7 +2,7 @@
       <section class='justify-center items-center lg:mt:0 py-28 px-4 dark:bg-[#0F0E0E]'>
         <div class='mx-auto text-center'>
             <div class='flex flex-col items-center mb-4'>
-                <img src="@/assets/images/profile1.jpg" alt="profile image" width={100} height={100} 
+                <img src="/images/profile1.jpg" alt="profile image" width={100} height={100} 
                 class='rounded-full mb-4 w-32 h-32 object-cover ring-4 ring-primary'/>
             </div>
 

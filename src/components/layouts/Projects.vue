@@ -1,10 +1,10 @@
 <template>
     <section id="projects" class="dark:bg-[#0F0E0E]">
         <div class="max-w-7xl mx-auto px-4 py-20">
-        <h2 class="text-3xl font-bold mb-12 text-primary">Featured Projects</h2>
+        <h2 class="text-3xl font-bold mb-12 text-primary">Featured Projectss</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8" >
             <article v-for="project in projects" key={{project.title}} className="bg-white dark:bg-slate-700 rounded-lg shadow-md p-6 hover:ring-1 hover:ring-primary">
-                <img :src="'src/assets/images/'+project.image" alt="profile image"  className="object-cove rounded-lg mb-2"
+                <img :src="'images/'+project.image" alt="profile image"  className="object-cove rounded-lg mb-2"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
               <h3 
                 className="text-xl font-semibold mb-2"
