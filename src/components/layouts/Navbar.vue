@@ -1,7 +1,7 @@
 <template>
     <header class="w-full bg-white/10 dark:bg-dark z-50 border-b border-gray-200 dark:border-gray-700 ">
         <div class="flex justify-between items-center p-8 lg:px-12 relative z-20">
-            <a href="/" class="text-xl font-bold text-primary">Nur | Dev</a>
+            <a href="/" class="text-xl font-bold text-primary">Insyirah | Dev</a>
             <!-- Mobile Toggle Button -->
             <div class="md:hidden z-30">
                 <button class="block focus:outline-none" @click="isMenuOpen = !isMenuOpen">
@@ -42,8 +42,8 @@ import { ref } from "vue";
 const isMenuOpen = ref(false);
 const Menu = ref([
         {name:'Home',href:'/'},
-        {name:'About',href:'#about'},
         {name:'Projects',href:'#projects'},
+        {name:'Skills',href:'#skills'},
         {name:'Contact',href:'#contacts'}
 ])
 
