@@ -28,10 +28,10 @@
                 </li>
             </ul>
 
-             <button @click="toggleDarkMode()" class="text-white ml-20 z-10 hidden md:block">
+             <!-- <button @click="toggleDarkMode()" class="text-white ml-20 z-10 hidden md:block" v-if="false">
                 <Icon v-if="!isDarkMode" icon="line-md:moon-filled" class="text-3xl text-primary"/>
                 <Icon v-else icon="line-md:sunny-outline" class="text-3xl text-primary"/>
-             </button>
+             </button> -->
             </nav>
         </div>
     </header>
@@ -44,7 +44,7 @@ const Menu = ref([
         {name:'Home',href:'/'},
         {name:'Projects',href:'#projects'},
         {name:'Skills',href:'#skills'},
-        {name:'Contact',href:'#contacts'}
+        {name:'Contact',href:'#contact'}
 ])
 
 const scrollToSection = (href) => {
