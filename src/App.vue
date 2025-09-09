@@ -4,8 +4,9 @@
   <div class="bg-white dark:bg-gray-900 dark:text-white min-h-screen">
     <Navbar/>
     <Hero/>
-    <Projects/>
     <Skills/>
+    <Projects/>
+    <Contact/>
     <Footer/>
   </div>
 
@@ -18,4 +19,5 @@ const Hero = defineAsyncComponent(()=>import('@/components/layouts/HeroSection.v
 const Projects = defineAsyncComponent(()=>import('@/components/layouts/Projects.vue'))//this make sure the navbar component will load only when neeh it which help improve performance
 const Skills = defineAsyncComponent(()=>import('@/components/layouts/Skills.vue'))//this make sure the navbar component will load only when neeh it which help improve performance
 const Footer = defineAsyncComponent(()=>import('@/components/layouts/Footer.vue'))//this make sure the navbar component will load only when neeh it which help improve performance
+const Contact = defineAsyncComponent(()=>import('@/components/layouts/Contact.vue'))//this make sure the navbar component will load only when neeh it which help improve performance
 </script>
