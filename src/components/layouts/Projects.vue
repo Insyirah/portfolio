@@ -25,6 +25,10 @@
                     {{item}}
                   </span>
               </div>
+              <div class="text-sm">
+                <a v-if="project.githubLink" :href="project.githubLink"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a v-if="project.demoLink" :href="project.demoLink"><i class="fa fa-link ml-2" aria-hidden="true"></i></a>
+              </div>
              
             </article>
         </div>
@@ -42,64 +46,72 @@ const projects = ref([
         title: 'MyEHS-Malaysia Environmentally Hazardous Substances System',
         description: 'A government portal built with Vue.js, Laravel, and Bootstrap.',
         technologies: ['Vue.js', 'Bootstrap', 'Chart.js'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
+        githubLink: null,
+        demoLink: 'https://myehs.doe.gov.my/',
         image: '/myehs.png',
+      },
+      {
+        title: 'Vue3 Simple My-Catalog',
+        description: 'A Vue 3 catalog app with Pinia for state management and Tailwind CSS for styling, built as a practice project to explore Vue3 and responsive UI design.',
+        technologies: ['Vue.js','Tailwind','Pinia'],
+        githubLink: 'https://github.com/Insyirah/vue3-simple-catalog',
+        demoLink: 'https://vue3-simple-catalog.vercel.app/', 
+        image: '/catalog.png',
       },
       {
         title: 'SoS Online System',
         description: 'A platform with private video consultations.',
         technologies: ['Vue.js','Bootstrap','Laravel'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com', 
+        githubLink: null,
+        demoLink: 'https://sos.dev-cdp.xyz/', 
         image: '/sos.png',
       },
       {
         title: 'My Portfolio',
         description: 'My personal portfolio website showcasing my projects and skill.',
         technologies: ['Vue.js','Tailwind'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com', 
+        githubLink: 'https://github.com/Insyirah/portfolio',
+        demoLink: null, 
         image: '/portfolio.png',
       },
       {
         title: 'VetPn9 Portal',
         description: 'An integrated system for managing poultry farm licensing and enforcement more efficiently.',
         technologies: ['Vue.js','Bootstrap','Laravel'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
+        githubLink: null,
+        demoLink: 'https://vet-n9.enterstripe.cloud/',
         image: '/vetpn.png',
       },
       {
         title: 'Aircond Service Booking',
         description: 'A platform to book reliable aircond services anytime, anywhere.',
         technologies: ['Vue.js','Bootstrap','Laravel'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
+        githubLink: null,
+        demoLink: 'https://aircond.staging.nazsoftech.com/',
         image: '/aircond.png',
       },
       {
         title: 'Zakat Perak',
         description: 'A mobile application to get info from existing website.',
         technologies: ['Ionic Framework', 'Typescript'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
+        githubLink: null,
+        demoLink: null,
         image: '/zakat-perak.png',
       },
       {
         title: 'Aircond Service Application',
         description: 'An application to book reliable aircond services anytime, anywhere.',
         technologies: ['Flutter'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
+        githubLink: null,
+        demoLink: null,
         image: '/aircond-mobile.png',
       },
       {
         title: 'Statistic Dashboard',
         description: 'A dashboard that shows statistics in real time for easier monitoring and reporting.',
         technologies: ['Vue.js', 'Laravel', 'Chart.js'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
+        githubLink: null,
+        demoLink: null,
         image: '/statistic-dashboard.png',
       },
     //   {
