@@ -1,31 +1,36 @@
 <template>
-    <section id="projects" class="dark:bg-[#0F0E0E]">
+    <section id="projects" class="">
         <div class="max-w-7xl mx-auto px-4 py-20">
-        <h2 class="text-3xl font-bold mb-12 text-primary">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <article data-aos="zoom-in-up" v-for="project in projects" key={{project.title}} className="bg-white dark:bg-slate-700 rounded-lg shadow-md p-6 hover:ring-1 hover:ring-primary">
-                <img :src="'images/'+project.image" alt="profile image"  className="object-cove rounded-lg mb-2"
+        <!-- Title -->
+        <div class="flex py-4">
+          <div class=" bg-yellow-400 w-3 rounded"></div>
+          <h2 class="text-3xl text-primary ml-2">Featured Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article data-aos="fade-left" v-for="project in projects" key={{project.title}} 
+            class="border dark:border-slate-700 rounded-lg shadow-md p-6 hover:ring-1 hover:ring-primary">
+                <img :src="'images/'+project.image" alt="profile image"  class="object-cove rounded-lg mb-2"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
               <h3 
-                className="text-xl font-semibold mb-2"
+                class="text-xl font-semibold mb-2"
               >
                 {{project.title}}
               </h3>
               <p 
-                className="text-gray-600 dark:text-gray-300 mb-4"
+                class="text-gray-600 dark:text-gray-300 mb-4"
               >
                 {{project.description}}
               </p>
-              <div className="flex flex-wrap gap-2 mb-4" >
+              <div class="flex flex-wrap gap-2 mb-4" >
                   <span
                     v-for="item in project.technologies"
                     key={{item}}
-                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                    class="px-3 py-1 bg-yellow-400 text-gray-900 rounded-lg text-sm"
                   >
                     {{item}}
                   </span>
               </div>
-              <div class="text-sm">
+              <div class="text-sm text-primary">
                 <a v-if="project.githubLink" :href="project.githubLink"><i class="fa fa-github" aria-hidden="true"></i></a>
                 <a v-if="project.demoLink" :href="project.demoLink"><i class="fa fa-link ml-2" aria-hidden="true"></i></a>
               </div>
