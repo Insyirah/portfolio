@@ -1,5 +1,9 @@
 
-
+<style>
+html, body {
+  overflow-x: hidden;
+}
+</style>
 <template>
   <div class="bg-white dark:bg-gray-900 dark:text-white min-h-screen">
     <Navbar/>
