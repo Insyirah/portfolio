@@ -56,6 +56,14 @@ const projects = ref([
         image: '/myehs.png',
       },
       {
+        title: 'Expense Tracker (MERN Stack)',
+        description: 'A full-stack Expense Tracker Application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This project helps users manage their personal finances by tracking income and expenses in real-time through an intuitive and responsive interface.',
+        technologies: ['ReactJs','TailwindCss','Express','MongoDB','NodeJs'],
+        githubLink: 'https://github.com/Insyirah/full-stack-expense-tracker-MERN',
+        demoLink: 'https://vue3-simple-catalog.vercel.app/', 
+        image: '/expense.png',
+      },
+      {
         title: 'Vue3 Simple My-Catalog',
         description: 'A Vue 3 catalog app with Pinia for state management and Tailwind CSS for styling, built as a practice project to explore Vue3 and responsive UI design.',
         technologies: ['Vue.js','Tailwind','Pinia'],

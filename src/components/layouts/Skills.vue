@@ -28,10 +28,14 @@ import {ref} from "vue";
 
 const skills = ref([
         { title: 'VueJs',icon:'fa-brands fa-vuejs'},
+        { title: 'ReactJs',icon:'fa-brands fa-react'},
+        { title: 'React Native',icon:'fa-brands fa-react'},
         { title: 'Angular',icon:'fa-brands fa-angular'},
         { title: 'TailwindCss',img:'/tailwind-icon.png'},
         { title: 'Bootstrap', icon:'fa-brands fa-bootstrap'},
         { title: 'Laravel',icon:'fa-brands fa-laravel'},
+        { title: 'NodeJs',icon:'fa-brands fa-node-js'},
+        { title: 'MySQL',icon:'fa-brands fa-database'},
         { title: 'Ionic Framework',img:'/ionic-icon.png'},
         { title: 'Flutter',icon:"fa-brands fa-flutter"},
         { title: 'Javascript',icon:"fab fa-js"},
