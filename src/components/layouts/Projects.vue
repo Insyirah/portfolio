@@ -60,7 +60,7 @@ const projects = ref([
         description: 'A full-stack Expense Tracker Application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This project helps users manage their personal finances by tracking income and expenses in real-time through an intuitive and responsive interface.',
         technologies: ['ReactJs','TailwindCss','Express','MongoDB','NodeJs'],
         githubLink: 'https://github.com/Insyirah/full-stack-expense-tracker-MERN',
-        demoLink: 'https://vue3-simple-catalog.vercel.app/', 
+        demoLink: 'https://expense-tracker-frontend-h4b4.onrender.com/login', 
         image: '/expense.png',
       },
       {
